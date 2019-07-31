@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img id="myball" src="https://image.freepik.com/free-vector/doodle-soccer-ball_1034-741.jpg" width="300" height="300">
+<p>Click me now !! Ball will move.</p>
+<button type="button" onclick="MyBall();">Click me</button>
+<script>
+    let imgObj = null
+    imgObj = document.getElementById('myball');
+
+    function init() {
+        imgObj = document.getElementById('myball');
+        imgObj.style.position = 'relative';
+        imgObj.style.left = '0px';
+    }
+
+    function MyBall() {
+        imgObj.style.left = parseInt(imgObj.style.left) + 10 + 'px';
+    }
+
+    window.onload = init();
+</script>
+</body>
+</html>
