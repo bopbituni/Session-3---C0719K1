@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let i = Number(prompt("Nhap nam ma ban muon kiem tra"));
+    if (i % 4 === 0) {
+        if (i % 100 === 0) {
+            if (i % 400 === 0) {
+                alert("day la nam nhuan");
+            } else {
+                alert("day khong phai nam nhuan");
+            }
+        } else {
+            alert("day la nam nhuan");
+        }
+    } else {
+        alert("day khong la nam nhuan");
+    }
+</script>
+</body>
+</html>
